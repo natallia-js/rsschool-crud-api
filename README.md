@@ -1,3 +1,7 @@
+# LINK TO PULL REQUEST
+
+https://github.com/natallia-js/CRUID-API/pull/1
+
 # PREREQISITES
 
 1. Task: Simple CRUD API (https://github.com/AlreadyBored/nodejs-assignments/blob/main/assignments/crud-api/assignment.md)
