@@ -37,7 +37,12 @@ cluster.on("message", async (worker: Worker, message: string) => {
   try {
     messageObject = JSON.parse(message);
   } catch (error: any) {
-    messageObject = { actionId: '', action: '', data: null, error: error.message };
+    messageObject = {
+      actionId: "",
+      action: "",
+      data: null,
+      error: error.message,
+    };
   }
   const response: ActionData = {
     actionId: messageObject.actionId,

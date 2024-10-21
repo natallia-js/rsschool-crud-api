@@ -33,7 +33,7 @@ export default [{
 
         parserOptions: {
             project: "tsconfig.json",
-            tsconfigRootDir: "C:\\Work\\ПО_test\\NodeJS Course\\Task 4\\My-CRUD_API",
+            tsconfigRootDir: ".",
         },
     },
 
