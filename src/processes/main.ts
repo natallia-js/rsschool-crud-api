@@ -33,7 +33,12 @@ cluster.on("exit", (worker, code, signal) => {
 });
 
 cluster.on("message", async (worker: Worker, message: string) => {
-  const messageObject: ActionData = JSON.parse(message);
+  let messageObject: ActionData;
+  try {
+    messageObject = JSON.parse(message);
+  } catch (error: any) {
+    messageObject = { actionId: '', action: '', data: null, error: error.message };
+  }
   const response: ActionData = {
     actionId: messageObject.actionId,
     action: messageObject.action,
