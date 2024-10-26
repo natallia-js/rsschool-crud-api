@@ -27,3 +27,7 @@ https://github.com/natallia-js/CRUID-API/pull/1
 ![test results](images_for_readme/tests.png)
 
 4. Tested on Windows 10 (work computer and home notebook) and on Ubuntu 22
+
+# LINTING
+
+eslint shows 24 problems - but all of them are about 'any' type - it's OK
